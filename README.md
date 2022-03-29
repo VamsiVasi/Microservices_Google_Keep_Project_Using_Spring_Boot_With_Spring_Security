@@ -20,9 +20,12 @@ _**Microservices Google Keep Spring Boot Project Using MongoDB With Spring Secur
 # _Note_
 * Add **_admin_** document in **_users__** collection of **_Microservice_Google_Keep_** Database in MongoDB
 ```bash
+use Microservice_Google_Keep;
+```
+```bash
 db.users_.insert({
   userName: 'AdminUser',
   password: 'AdminPassword',
   role: 'ROLE_ADMIN'
-})
+});
 ```
